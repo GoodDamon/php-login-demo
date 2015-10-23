@@ -18,14 +18,14 @@ if(isset($_GET['mode'])) {
     }
 }
 
-if(!empty($_REQUEST)) {
+if(!empty($_POST)) {
 
     // Load up the database
     include("config.php");
     include("opendb.php");
 
-    $user_name = $_REQUEST['user_name'];
-    $user_pass = $_REQUEST['user_pass'];
+    $user_name = $_POST['user_name'];
+    $user_pass = $_POST['user_pass'];
 
     $SQL = "SELECT COUNT(*)
             AS total
