@@ -7,7 +7,7 @@ var myApp = {
 			url : 'php/app.php',
 			dataType :'json',
 			success : function(data) {
-				$('#notice').append(data['message']);
+				$('#notice').empty().append(data['message']);
 				$('#login-page').hide();
 				$('#logged-in-page').show();
 				$('#logout-button').show();
