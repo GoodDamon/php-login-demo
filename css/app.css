@@ -1,0 +1,7 @@
+.form-signin {
+	width: 300px;
+}
+
+#login-page, #logged-in-page, #logout-button {
+	display: none;
+}

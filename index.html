@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/app.css">
+
+	<!-- JavaScript libraries and frameworks -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<title>PHP login test</title>
+</head>
+<body>
+
+	<div class="container" id="login-page">
+
+		<div class="form-signin" id="login">
+			<h2 class="form-signin-heading">Please sign in</h2>
+			<label for="input-user-name" class="sr-only">User name</label>
+			<input type="text" id="input-user-name" class="form-control" placeholder="User name" required autofocus>
+			<label for="input-user-pass" class="sr-only">Password</label>
+			<input type="password" id="input-user-pass" class="form-control" placeholder="Password" required>
+			<button id="login-button" class="btn btn-lg btn-primary btn-block">Sign in</button>
+		</div>
+
+	</div> <!-- /container -->
+	<div class="container" id="logged-in-page">
+		<!-- Obviously in the real world, we'd never do this. -->
+		<div class="jumbotron"><h3 id="notice"></h3></div>
+	</div>
+	<div class="panel panel-info" id="login-status"></div>
+	<button class="btn btn-sm" id="logout-button">Log out</button>
+	<!-- Local JavaScript -->
+	<script src="js/app.js"></script>
+
+</body>
+</html>
